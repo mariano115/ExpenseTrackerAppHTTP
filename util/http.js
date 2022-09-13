@@ -34,7 +34,7 @@ const updateExpense = (id, expenseData) => {
 };
 
 const deleteExpense = (id) => {
-  return axios.put(BACKEND_URL + `/expenses/${id}.json`);
+  return axios.delete(BACKEND_URL + `/expenses/${id}.json`);
 };
 
 module.exports = {
